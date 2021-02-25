@@ -1,17 +1,20 @@
-import './App.css';
 import MePic from './images/MePic.jpeg';
+import styled from 'styled-components';
+
+const Div = styled.div`
+
+`;
+
 
 function App() {
   return (
-    <div className="App">
+    <Div>
       <header className="App-header">
         <img src={MePic} className="App-logo" alt="logo" />
         <p>Moussa Diallo</p>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+       
       </header>
-    </div>
+    </Div>
   );
 }
 
