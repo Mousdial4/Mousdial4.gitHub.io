@@ -2,13 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import Navbar from "./Navbar";
-import styled from 'styled-components';
-
+import {createGlobalStyle} from 'styled-components';
 
 import reportWebVitals from "./reportWebVitals";
 
+const GlobalStyle = createGlobalStyle`
+html,
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+`
+
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyle/>
     <Navbar />
     <App />
   </React.StrictMode>,

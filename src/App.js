@@ -9,10 +9,9 @@ const Div = styled.div`
 function App() {
   return (
     <Div>
-      <header className="App-header">
-        <img src={MePic} className="App-logo" alt="logo" />
+      <header>
+        <img src={MePic} alt="Moussa Diallo" />
         <p>Moussa Diallo</p>
-       
       </header>
     </Div>
   );
