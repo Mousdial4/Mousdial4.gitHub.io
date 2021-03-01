@@ -1,17 +1,43 @@
 import styled from "styled-components";
 import React from "react";
-import MePic from "./images/vectorstock_32126882.jpg";
+import MePic from "./images/vectorstock_32126882-removebg-preview.png";
+import Burger from "./Burger";
 
-const Navbar = styled.nav`
+const Nav = styled.nav`
   background: black;
+  width: auto;
+  height: auto;
+  border-bottom: 0.6px solid black;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    padding: 15px 0;
+  }
+  img {
+    max-height: 50px;
+    border: 0.1px double red;
+  }
+`;
 
+const Navbar = () => {
+  return (
+    <Nav>
+      <div className="logo">
+        <img src={MePic} />
+      </div>
+      <Burger />
+    </Nav>
+  );
+};
+
+export default Navbar;
+/* 
   ul {
     list-style: none;
     text-decoration: none;
     color: red;
-
     justify-content: flex-end;
-    align-self: auto;
   }
   a {
     text-decoration: none;
@@ -20,35 +46,4 @@ const Navbar = styled.nav`
   }
   a:hover {
     background: #1565c0;
-  }
-  img {
-    padding: 5px;
-    border: 1px solid white;
-    max-height: 90px;
-    justify-content: flex-start;
-  }
-`;
-
-function NavBar() {
-  return (
-    <Navbar>
-      <img src={MePic} alt="Moussa Diallo" />
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">FAQ</a>
-        </li>
-      </ul>
-    </Navbar>
-  );
-}
-
-export default NavBar;
+  }*/

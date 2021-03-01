@@ -11,12 +11,26 @@ html,
 body{
   margin: 0;
   padding: 0;
+
 }
 
 body{
   font-family: Roboto, sans-serif;
   
 }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+  }
 
 
 `
