@@ -1,29 +1,38 @@
 import styled from "styled-components";
 import React from "react";
+import MePic from "./images/vectorstock_32126882.jpg";
 
 const Navbar = styled.nav`
-  background: deepskyblue;
+  background: black;
+
   ul {
-    display: flex;
     list-style: none;
-    flex-flow: row wrap;
+    text-decoration: none;
+    color: red;
+
     justify-content: flex-end;
-    margin: 0;
+    align-self: auto;
   }
   a {
     text-decoration: none;
-    display: flex;
+    color: red;
     padding: 20px;
-    color: white;
   }
   a:hover {
     background: #1565c0;
+  }
+  img {
+    padding: 5px;
+    border: 1px solid white;
+    max-height: 90px;
+    justify-content: flex-start;
   }
 `;
 
 function NavBar() {
   return (
     <Navbar>
+      <img src={MePic} alt="Moussa Diallo" />
       <ul>
         <li>
           <a href="#">Home</a>
