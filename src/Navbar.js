@@ -3,7 +3,7 @@ import React from "react";
 import Burger from "./Burger";
 
 const Nav = styled.nav`
-  background: white;
+  background: black;
   width: auto;
   height: auto;
   border-bottom: 0.9px solid black;
@@ -14,9 +14,8 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 35px;
-
     padding: 10px 12px;
   }
   p {
@@ -25,6 +24,7 @@ const Nav = styled.nav`
     height: 40px;
     border: 5px double red;
     justify-content: center;
+    color: white;
   }
 `;
 
