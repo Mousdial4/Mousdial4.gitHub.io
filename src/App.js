@@ -9,7 +9,6 @@ const Div = styled.div`
     font-family: "Lucida Console", "Courier New", monospace;
   }
   img {
-    opacity: 1;
     width: 700px;
     height: 700px;
     border-radius: 700px;
@@ -30,7 +29,7 @@ const Div = styled.div`
     font-weight: 550;
   }
   .aside-2 p {
-    font-size: 20px;
+    font-size: 25px;
     color: black;
     font-weight: bold;
   }
@@ -61,8 +60,11 @@ function App() {
           </a>
         </aside>
         <aside className="aside aside-2">
-          <p>Hello My Name is </p>
-          Moussa Diallo <button>All About Me</button>
+          <p> Hello My Name is </p>
+          Moussa Diallo
+          <div>
+            <button> All About Me </button>
+          </div>
         </aside>
       </div>
     </Div>
