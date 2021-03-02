@@ -6,12 +6,13 @@ const Div = styled.div`
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    
+    font-family: "Lucida Console", "Courier New", monospace;
   }
   img {
-    opacity: 0.6;
+    opacity: 1;
     width: 700px;
     height: 700px;
+    border-radius: 700px;
   }
 
   .aside-1 {
@@ -20,21 +21,33 @@ const Div = styled.div`
     order: 1;
   }
   .aside-2 {
-        text-align: center;
-
+    text-align: center;
     font-size: 60px;
     color: red;
     font-family: "Lucida Console", "Courier New", monospace;
     flex: 3;
     order: 2;
-
+    font-weight: 550;
   }
   .aside-2 p {
-
     font-size: 20px;
     color: black;
-    font-style: italic;
     font-weight: bold;
+  }
+  button {
+    font-weight: bold;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    font-family: "Lucida Console", "Courier New", monospace;
   }
 `;
 
@@ -43,12 +56,13 @@ function App() {
     <Div>
       <div className="wrapper">
         <aside className="aside aside-1">
-          <a href="#linkedin">
+          <a href="https://www.linkedin.com/in/moussa-diallo-8654a81bb/">
             <img src={MePic} alt="Moussa Diallo" />
           </a>
         </aside>
         <aside className="aside aside-2">
-          <p>Hello My Name is </p>Moussa Diallo
+          <p>Hello My Name is </p>
+          Moussa Diallo <button>All About Me</button>
         </aside>
       </div>
     </Div>

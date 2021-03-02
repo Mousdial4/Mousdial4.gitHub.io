@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        <img src={MePic} />
+        <img src={MePic} alt="sadda"/>
       </div>
       <Burger />
     </Nav>
