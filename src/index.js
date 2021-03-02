@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import Navbar from "./Navbar";
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 import reportWebVitals from "./reportWebVitals";
 
@@ -11,7 +11,7 @@ html,
 body{
   margin: 0;
   padding: 0;
-
+  background: white;
 }
 
 body{
@@ -21,6 +21,7 @@ body{
   * {
     margin: 0;
     padding: 0;
+  
   }
   *,
   *::before,
@@ -31,13 +32,11 @@ body{
   a {
     text-decoration: none;
   }
-
-
-`
+`;
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyle/>
+    <GlobalStyle />
     <Navbar />
     <App />
   </React.StrictMode>,

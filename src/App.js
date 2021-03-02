@@ -1,29 +1,56 @@
-import MePic from "./images/MePic.jpeg";
+import MePic from "./images/MePic-removebg-preview.png";
 import styled from "styled-components";
 
 const Div = styled.div`
-  text-align: center;
-  img {
-    padding: 5px;
-    border: 4px double red;
-    max-height: 150px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
   }
-  img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  img {
+    opacity: 0.6;
+    width: 700px;
+    height: 700px;
+  }
+
+  .aside-1 {
+    text-align: center;
+    flex: 4;
+    order: 1;
+  }
+  .aside-2 {
+        text-align: center;
+
+    font-size: 60px;
+    color: red;
+    font-family: "Lucida Console", "Courier New", monospace;
+    flex: 3;
+    order: 2;
+
+  }
+  .aside-2 p {
+
+    font-size: 20px;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
   }
 `;
 
 function App() {
   return (
     <Div>
-      <a href="#linkedin">
-        <img src={MePic} alt="Moussa Diallo" />
-      </a>
-      <p>Moussa Diallo</p>
+      <div className="wrapper">
+        <aside className="aside aside-1">
+          <a href="#linkedin">
+            <img src={MePic} alt="Moussa Diallo" />
+          </a>
+        </aside>
+        <aside className="aside aside-2">
+          <p>Hello My Name is </p>Moussa Diallo
+        </aside>
+      </div>
     </Div>
   );
 }
