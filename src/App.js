@@ -12,6 +12,7 @@ const Div = styled.div`
     width: 700px;
     height: 700px;
     border-radius: 700px;
+    border: 5px double red;
   }
 
   .aside-1 {

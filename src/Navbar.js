@@ -1,22 +1,30 @@
 import styled from "styled-components";
 import React from "react";
-import MePic from "./images/vectorstock_32126882-removebg-preview.png";
 import Burger from "./Burger";
 
 const Nav = styled.nav`
-  background: black;
+  background: white;
   width: auto;
   height: auto;
-  border-bottom: 0.6px solid black;
-  padding: 0 10px;
+  border-bottom: 0.9px solid black;
   display: flex;
   justify-content: space-between;
+
   .logo {
-    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 35px;
+
+    padding: 10px 12px;
   }
-  img {
-    max-height: 50px;
-    border: 0.1px double red;
+  p {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 5px double red;
+    justify-content: center;
   }
 `;
 
@@ -24,7 +32,7 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        <img src={MePic} alt="sadda"/>
+        <p>M</p>
       </div>
       <Burger />
     </Nav>
