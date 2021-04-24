@@ -1,5 +1,7 @@
 import MePic from "./images/MePic-removebg-preview.png";
 import styled from "styled-components";
+import Aboutme from "./Aboutme";
+
 
 const Div = styled.div`
   .wrapper {
@@ -7,6 +9,7 @@ const Div = styled.div`
     flex-flow: row wrap;
     align-items: center;
     font-family: "Lucida Console", "Courier New", monospace;
+    padding-bottom: 50px;
   }
   img {
     width: 700px;
@@ -68,6 +71,7 @@ function App() {
           </div>
         </aside>
       </div>
+      <Aboutme/>
     </Div>
   );
 }

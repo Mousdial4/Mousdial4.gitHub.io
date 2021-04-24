@@ -1,0 +1,4 @@
+  <div>
+          <h1>Contacts</h1>
+          <p> &copy; {new Date().getFullYear()} Copyright:<a href="https://github.com/mdial009"> Madany Diallo</a> </p>
+      </div> 
