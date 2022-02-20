@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React from "react";
 
 const StyledAboutme = styled.div`
-  background: white;
+  background: #f0efe2;
   width: auto;
   height: auto;
   align-items: center;
@@ -23,7 +23,10 @@ const Aboutme = () => {
     <StyledAboutme>
       <div>
         <h1>About Me</h1>
-        <p>Hello my name is Moussa Diallo I currently go to NYU and I'm a senior whose majoring in business</p>
+        <p>
+          Hello my name is Moussa Diallo I currently go to NYU and I'm a senior
+          whose majoring in business
+        </p>
       </div>
     </StyledAboutme>
   );

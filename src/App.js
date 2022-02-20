@@ -12,8 +12,8 @@ const Div = styled.div`
     padding-bottom: 50px;
   }
   img {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     border-radius: 700px;
     border: 5px double red;
   }
