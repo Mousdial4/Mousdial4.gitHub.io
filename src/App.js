@@ -4,6 +4,8 @@ import Aboutme from "./Aboutme";
 
 
 const Div = styled.div`
+  background: #f0efe2;
+
   .wrapper {
     display: flex;
     flex-flow: row wrap;

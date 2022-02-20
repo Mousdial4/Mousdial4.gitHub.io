@@ -24,8 +24,7 @@ const Aboutme = () => {
       <div>
         <h1>About Me</h1>
         <p>
-          Hello my name is Moussa Diallo I currently go to NYU and I'm a senior
-          whose majoring in business
+          Hello my name is Moussa Diallo. I got a degree in Business Administration and Management from the school of New York University.
         </p>
       </div>
     </StyledAboutme>

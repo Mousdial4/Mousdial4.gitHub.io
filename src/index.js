@@ -13,22 +13,23 @@ html,
 body{
   margin: 0;
   padding: 0;
-  background: white;
+  background: #f0efe2;
+
 }
 
 body{
         font-family: "Lucida Console", "Courier New", monospace;
-  
+
 }
   * {
     margin: 0;
     padding: 0;
-  
+
   }
   *,
   *::before,
   *::after {
-    box-sizing: inherit;
+        box-sizing: inherit;
   }
   
   a {
@@ -50,10 +51,10 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-  /**  padding: 10px 0; 
-   * FF0000
-   * FFFFFF
-   * 
-   * 
-   * 
-  */
+/**  padding: 10px 0;
+ * FF0000
+ * FFFFFF
+ *
+ *
+ *
+ */
