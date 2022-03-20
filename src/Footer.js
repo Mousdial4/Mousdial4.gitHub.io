@@ -6,7 +6,7 @@ export const Box = styled.div`
   background: #dc143c;
   bottom: 0;
   width: 100%;
-  position: absolute;
+  --position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
@@ -54,7 +54,7 @@ export const Heading = styled.p`
 
 const Footer = () => {
   return (
-    <Box>
+    <Box id="contact">
       <h1 style={{ color: "white", textAlign: "center", fontSize: "40px" }}>
         Contacts
       </h1>

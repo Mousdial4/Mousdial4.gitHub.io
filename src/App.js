@@ -1,7 +1,8 @@
 import MePic from "./images/MePic-removebg-preview.png";
 import styled from "styled-components";
 import Aboutme from "./Aboutme";
-
+import Resume from "./Resume";
+import { Link } from "react-router-dom";
 
 const Div = styled.div`
   background: #f0efe2;
@@ -69,11 +70,19 @@ function App() {
           <p> Hello My Name is </p>
           Moussa Diallo
           <div>
-            <button> All About Me </button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.replace("/#about");
+              }}
+            >
+              All About Me
+            </button>
           </div>
         </aside>
       </div>
-      <Aboutme/>
+      <Aboutme />
+      <Resume />
     </Div>
   );
 }

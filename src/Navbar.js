@@ -32,7 +32,15 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        <p>M</p>
+        <p
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.replace("/#home");
+          }}
+          id="home"
+        >
+          M
+        </p>
       </div>
       <Burger />
     </Nav>

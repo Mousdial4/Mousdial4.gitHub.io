@@ -30,8 +30,22 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
+      <li
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.replace("/#about");
+        }}
+      >
+        About
+      </li>
+      <li
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.replace("/#contact");
+        }}
+      >
+        Contact
+      </li>
     </Ul>
   );
 };
