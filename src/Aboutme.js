@@ -1,20 +1,38 @@
 import styled from "styled-components";
 import React from "react";
+import Button from "./Button";
+import Education from "./Education";
 
 const StyledAboutme = styled.div`
   background: #f0efe2;
-  width: auto;
-  height: auto;
   align-items: center;
-  border-bottom: 0.9px solid black;
-  display: flex;
-  justify-content: center;
+
+  padding: 10px;
 
   h1 {
     font-size: 40px;
     display: flex;
     justify-content: center;
     color: #dc143c;
+  }
+  div {
+    padding: 10px;
+  }
+`;
+const StyledResume = styled.div`
+  background: #f0efe2;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  button {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: #dc143c;
+  }
+  button:hover {
+    background: red;
   }
 `;
 
@@ -48,6 +66,13 @@ const Aboutme = () => {
           Office and the Google suite, and have been responsible for maintaining
           and ensuring the data of my store and other companies.
         </p>
+        <StyledResume>
+          <Button />
+        </StyledResume>
+        <div>
+          <h1 id="education">Education</h1>
+          <Education />
+        </div>
       </div>
     </StyledAboutme>
   );

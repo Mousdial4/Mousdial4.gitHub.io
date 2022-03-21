@@ -1,31 +1,16 @@
 import styled from "styled-components";
 import React from "react";
+import ReactiveButton from "reactive-button";
 
-const StyledAboutme = styled.div`
-  background: #f0efe2;
-  width: auto;
-  height: auto;
-  align-items: center;
-  border-bottom: 0.9px solid black;
-  display: flex;
-  justify-content: center;
+const StyledResume = styled.div``;
 
-  h1 {
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    color: #dc143c;
-  }
-`;
-
-const Aboutme = () => {
+const Resume = () => {
   return (
-    <StyledAboutme>
+    <StyledResume>
       <div>
-        <h1 id="Resume">Résumé</h1>
-        <p>Résumé Section</p>
+        <h1 id="Resume"></h1>
       </div>
-    </StyledAboutme>
+    </StyledResume>
   );
 };
-export default Aboutme;
+export default Resume;

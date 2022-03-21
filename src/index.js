@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Aboutme from "./Aboutme";
+
 
 import { createGlobalStyle } from "styled-components";
 
@@ -42,6 +44,7 @@ ReactDOM.render(
     <GlobalStyle />
     <Navbar />
     <App />
+    <Aboutme />
     <Footer />
   </React.StrictMode>,
   document.getElementById("root")

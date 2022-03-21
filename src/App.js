@@ -1,8 +1,5 @@
 import MePic from "./images/MePic-removebg-preview.png";
 import styled from "styled-components";
-import Aboutme from "./Aboutme";
-import Resume from "./Resume";
-import { Link } from "react-router-dom";
 
 const Div = styled.div`
   background: #f0efe2;
@@ -15,10 +12,10 @@ const Div = styled.div`
     padding-bottom: 50px;
   }
   img {
-    width: 600px;
-    height: 600px;
-    border-radius: 700px;
-    border: 5px double red;
+    width: 500px;
+    height: 500px;
+    border-radius: 600px;
+    border: 5px double #f0efe2;
   }
 
   .aside-1 {
@@ -29,7 +26,7 @@ const Div = styled.div`
   .aside-2 {
     text-align: center;
     font-size: 60px;
-    color: red;
+    color: #dc143c;
     font-family: "Lucida Console", "Courier New", monospace;
     flex: 3;
     order: 2;
@@ -50,9 +47,9 @@ const Div = styled.div`
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: white;
+    background-color: #dc143c;
     color: black;
-    border: 2px solid red;
+    border: 2px solid #dc143c;
     font-family: "Lucida Console", "Courier New", monospace;
   }
 `;
@@ -81,8 +78,6 @@ function App() {
           </div>
         </aside>
       </div>
-      <Aboutme />
-      <Resume />
     </Div>
   );
 }
