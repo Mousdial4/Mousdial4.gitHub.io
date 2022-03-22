@@ -6,7 +6,7 @@ import Education from "./Education";
 const StyledAboutme = styled.div`
   background: #f0efe2;
   align-items: center;
-
+  display: flex;
   padding: 10px;
 
   h1 {
@@ -19,6 +19,7 @@ const StyledAboutme = styled.div`
     padding: 10px;
   }
 `;
+const StyledBio = styled.div``;
 const StyledResume = styled.div`
   background: #f0efe2;
   align-items: center;
@@ -69,10 +70,10 @@ const Aboutme = () => {
         <StyledResume>
           <Button />
         </StyledResume>
-        <div>
-          <h1 id="education">Education</h1>
-          <Education />
-        </div>
+      </div>
+      <div>
+        <h1 id="education">Education</h1>
+        <Education />
       </div>
     </StyledAboutme>
   );
