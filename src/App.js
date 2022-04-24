@@ -107,10 +107,16 @@ function App() {
               TransitionProps={{ timeout: 600 }}
               title={
                 <React.Fragment>
-                  <Typography color="inherit">New York University</Typography>
+                  <center>
+                    <Typography color="inherit">New York University</Typography>
+                  </center>
                   <center>
                     <b>{"Class Of 2021"}</b>
                   </center>
+                  <p>
+                    {"Degree:"}
+                    <b>{" Business Administration and Management"}</b>
+                  </p>
                 </React.Fragment>
               }
             >
