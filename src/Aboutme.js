@@ -28,7 +28,7 @@ const Aboutme = () => {
       <div>
         <h1 id="about">About Me</h1>
         <h3>
-          Hello my name is <b>Moussa Diallo</b>. I got a degree in{" "}
+          TestHello my name is <b>Moussa Diallo</b>. I got a degree in{" "}
           <b> Business Administration and Management</b> from the school of
           <b> New York University</b>. As a Freshman at New York University
           majoring in Business Management, I have been interested in a career in
