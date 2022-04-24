@@ -3,7 +3,7 @@ import React from "react";
 import Burger from "./Burger";
 
 const Nav = styled.nav`
-  background: black;
+  background: #ef8da0;
   width: auto;
   height: auto;
   border-bottom: 0.9px solid black;

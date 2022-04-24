@@ -5,23 +5,24 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  color: red;
+  color: #dc143c;
   li {
     padding: 30px 10px;
+    cursor: pointer;
   }
   @media (max-width: 768px) {
-    flex-flow: column nowrap;
-    background-color: black;
+    flex-flow: column wrap;
+    background-color: #f0efe2;
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 300px;
-    padding-top: 3.5rem;
-    transition: transform 0.3s ease-in-out;
+    height: auto;
+    width: auto;
+    padding-top: 3rem;
+    transition: transform 0.2s ease-in-out;
     li {
-      color: red;
+      color: #dc143c;
     }
   }
 `;
@@ -29,7 +30,14 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
+      <li
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.replace("/");
+        }}
+      >
+        Home
+      </li>
       <li
         onClick={(e) => {
           e.preventDefault();
