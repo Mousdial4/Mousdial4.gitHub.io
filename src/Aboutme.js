@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import React from "react";
-import Button from "./Resume";
 
 const StyledAboutme = styled.div`
   background: #f0efe2;
   align-items: center;
   display: flex;
   padding: 10px;
+  padding-bottom: 220px;
 
   h1 {
     font-size: 40px;
@@ -17,21 +17,8 @@ const StyledAboutme = styled.div`
   div {
     padding: 10px;
   }
-`;
-const StyledResume = styled.div`
-  background: #f0efe2;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-  button {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
+  b {
     color: #dc143c;
-  }
-  button:hover {
-    background: red;
   }
 `;
 
@@ -40,8 +27,8 @@ const Aboutme = () => {
     <StyledAboutme>
       <div>
         <h1 id="about">About Me</h1>
-        <h2>
-          Hello my name is <b>Moussa Diallo</b>. I got a degree in
+        <h3>
+          Hello my name is <b>Moussa Diallo</b>. I got a degree in{" "}
           <b> Business Administration and Management</b> from the school of
           <b> New York University</b>. As a Freshman at New York University
           majoring in Business Management, I have been interested in a career in
@@ -65,7 +52,7 @@ const Aboutme = () => {
           high proficiency in both Microsoft Office and the Google suite, and
           have been responsible for maintaining and ensuring the data of my
           store and other companies.
-        </h2>
+        </h3>
       </div>
     </StyledAboutme>
   );

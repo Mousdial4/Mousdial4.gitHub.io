@@ -1,9 +1,13 @@
+import * as React from "react";
 import MePic from "./images/MePic-removebg-preview.png";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import Resume from "./Resume";
 import Resume_Link from "./images/Moussa_Diallo_Resume.pdf";
+import Fade from "@mui/material/Fade";
+import Zoom from "@mui/material/Zoom";
+import Typography from "@mui/material/Typography";
 
 const Div = styled("div")`
   background: #f0efe2;
@@ -44,7 +48,7 @@ const Div = styled("div")`
   button {
     font-weight: bold;
     color: white;
-    padding: 15px 32px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -57,14 +61,16 @@ const Div = styled("div")`
     font-family: "Lucida Console", "Courier New", monospace;
   }
 `;
-const BootstrapTooltip = styled(({ className, ...props }) => (
-  <Tooltip {...props} arrow classes={{ popper: className }} />
+
+const HtmlTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} />
 ))(({ theme }) => ({
-  [`& .${tooltipClasses.arrow}`]: {
-    color: theme.palette.common.black,
-  },
   [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: "#dc143c",
+    color: "rgba(0, 0, 0, 0.87)",
+    maxWidth: 390,
+    fontSize: theme.typography.pxToRem(12),
+    border: "1px solid #dadde9",
   },
 }));
 
@@ -81,15 +87,50 @@ function App() {
           <p> Hello My Name is </p>
           Moussa Diallo
           <div>
-            <BootstrapTooltip title="Assistant Manager @ Speedway [Jan 2018 - Current]">
+            <HtmlTooltip
+              TransitionComponent={Zoom}
+              title={
+                <React.Fragment>
+                  <Typography color="inherit">
+                    Assistant Manager <b>{"@ Speedway"}</b>
+                  </Typography>
+                  <center>
+                    <b>{"Janauray 2018 - Current"}</b>
+                  </center>
+                </React.Fragment>
+              }
+            >
               <Button>Job</Button>
-            </BootstrapTooltip>
-            <BootstrapTooltip title="New Visions Charter High School For Math And Science 2 [Class Of 2018]">
-              <Button>High School</Button>
-            </BootstrapTooltip>
-            <BootstrapTooltip title="New York University [Class Of 2021]">
+            </HtmlTooltip>
+            <HtmlTooltip
+              TransitionComponent={Fade}
+              TransitionProps={{ timeout: 600 }}
+              title={
+                <React.Fragment>
+                  <Typography color="inherit">New York University</Typography>
+                  <center>
+                    <b>{"Class Of 2021"}</b>
+                  </center>
+                </React.Fragment>
+              }
+            >
               <Button>College</Button>
-            </BootstrapTooltip>
+            </HtmlTooltip>
+            <HtmlTooltip
+              TransitionComponent={Zoom}
+              title={
+                <React.Fragment>
+                  <Typography color="inherit">
+                    New Visions Charter High School For Math And Science 2
+                  </Typography>
+                  <center>
+                    <b>{"Class Of 2018"}</b>
+                  </center>
+                </React.Fragment>
+              }
+            >
+              <Button>High School</Button>
+            </HtmlTooltip>
           </div>
           <a href={Resume_Link} download="Moussa_Diallo_Resume.pdf">
             <Resume />

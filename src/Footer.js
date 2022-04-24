@@ -6,27 +6,27 @@ export const Box = styled.div`
   background: #dc143c;
   bottom: 0;
   width: 100%;
-  --position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
 
   @media (max-width: 1000px) {
-    padding: 70px 30px;
+    padding: 50px 10px;
   }
 `;
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  max-width: 9000px;
+  max-width: auto;
   margin: 0 auto;
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 10px;
 `;
 
 export const Row = styled.div`
@@ -64,7 +64,11 @@ const Footer = () => {
             <Heading>Contact Info</Heading>
             <FooterLink>347-801-3240</FooterLink>
             <FooterLink href="mailto:Md4376@nyu.edu">Md4376@nyu.edu</FooterLink>
+            <a href="https://madany-diallo.netlify.app/">
+              <b>Made with 💙 by Madany Diallo</b>
+            </a>
           </Column>
+
           <Column>
             <Heading>Social Media</Heading>
             <FooterLink>
